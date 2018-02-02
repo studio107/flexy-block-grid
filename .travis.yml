@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '8'
+cache:
+  directories:
+  - node_modules
+before_install:
+- yarn install
+script: yarn test
+deploy:
+  provider: npm
+  email: max@studio107.ru
+  api_key:
+    secure: dbbcjVa4gNnyrSReVD1oEIe9JelCnOwpi/MgRGoyOoNh+G7egK/SijyZwTbn1k76WlZmVWWwYzeUYmfJ1TiUd8wL2gvhUaUi3Mp+wGBA+yISwjuklxc56JUfXhiCt4eeAAoRE0f7fEIv5AR2uAj1QItGRTs2mMJznzGTrwc9z4yjoIG7Zyh6K8DbjWHMiyab7J0nvC5mnv8ctFIig1NYbvzTIXLKZEtRp8pNSoISAbZ2Hprbk3Y5oACa6ExBZ5K2cZugFQHw49KTlMxmuHg62F8tReD7qW6Wvj9Z8Fn1jn3HrrhobzNIZDy+Sq45qvqrwNN+84wjB8ziRrbSsjhljZh1NKh3Q2U4e+ef3ZB6hwIoGAv55r7T5PurOUrz5FcfA32beojNyIb8jQK0oB0PyZX6PmN1DIoCR92SkZv5gr6GYaP+rSjdnB5xWIiaDL7airMXgCLxyFqSq3wXigXmpvUyBZBL/+W5OITdvegeEqdOPNEYvuMpsOpySDv04aCOPx4TAn6L4Af+qU/H6t7/trGkCMogA2LwqjTvg+y0C2h2S8aPchAIXaILvnmDB1MdS+5b7xZA7+Nzxucio2pWWJps40gakf1go4O7ove2eCCKScPdyo8bZlb/gwMLICbbZl/ImRXEhX3KvoRo8WNDQICJOPmjIto3+M0oFENvDGA=
+  on:
+    tags: true
+    repo: studio107/flexy-visibility

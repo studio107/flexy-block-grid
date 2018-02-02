@@ -1,0 +1,10 @@
+@import 'settings';
+@import 'mixin';
+
+@import '~flexy-functions/src/functions';
+@import '~flexy-breakpoint/src/breakpoint';
+@import '~flexy-device/src/device';
+
+.#{$flexy-prefix}-block-grid {
+  @include flexy-block-grid($flexy-block-grid-legacy);
+}

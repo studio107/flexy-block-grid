@@ -1,0 +1,6 @@
+$flexy-prefix: 'b' !default;
+$flexy-block-grid-padding: 0.5em !default;
+$flexy-block-grid-count: 12 !default;
+// Использовать flexbox для генерации block-grid? Если нет, то используется полный аналог из foundation
+$flexy-block-grid-legacy: false !default;
+$flexy-block-grid-use-devices: false !default;
